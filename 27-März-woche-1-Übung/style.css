@@ -1,0 +1,187 @@
+body{
+    background-image: url("https://www.reiseuhu.de/wp-content/uploads/2017/07/Beste-Reiseziel-in-Asien-Traumstrand-mit-Palme.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+   
+}
+/**** ich habe hier alle elementen von body in einem div reingemacht
+,weil ich will 2 table neben einander haben*******/
+body .containers{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+/******die 1 container steht im body wie die 2 container.******/
+.container-1{
+    background-color: rgba(12, 254, 254, 0.23);
+    border:solid rgb(120, 195, 225) 3px;
+    padding: 10px;
+    margin: 15px;
+    background-size: cover;
+    grid-column-start: 1;
+
+}
+/*****wie die 1 container es steht im body aber im richte seite mit 75% columns width. *****/
+.container-2{
+    background-color: rgba(6, 148, 148, 0.23);
+    border:solid rgb(43, 167, 216) 3px;
+    padding: 5px;
+    padding-left: 10px;
+    margin: 15px;
+    background-size: cover;
+}
+/****body .container-1{
+    position: relative;
+    box-sizing: 30%;
+    margin-left: 0;
+    margin-right: 70%;
+}
+body .container-2{
+    position: relative;
+    box-sizing: 70%;
+    margin-right: 0;
+    margin-left: 30%;
+    margin-top: 10px;
+    border: 5px;
+}****/
+ /***** mein main hat 2 spalte vo 50%*******/
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10%;
+}
+main .div-1{
+    display: flex;
+    justify-content: center;
+}
+/***** im header habe ich display flex benutzt um die 
+header funktion zu geben********/
+header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 8px;
+    background-color: rgba(96, 255, 250, 0.30);
+    border:solid rgb(43, 167, 216) 3px;
+}
+/******im logo habe ich bild benutzt,dann habe ich hier 
+die große mein bild geändert.******/
+.logo{
+    width: 80px;
+    height: 70px;
+    padding: 4px;
+    border-radius: 10px;
+    margin-right: 50%;
+    box-shadow: white 10px 10px 10px;
+}
+/**header .la{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}**/
+header .a{
+    list-style-type: none;
+    text-shadow: whitesmoke;
+    margin-top: 15px;
+   
+}
+/***** ich will mein header von einander abstand haben und auch von seiten,da
+habe ich jutify-content:space-around benutzt.******/
+header .a a{
+    justify-content: space-around;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+h1{
+    width: 100%;
+}
+main div h1 .weltreise{
+    width: 120px;
+    border: groove gray 2px;
+    margin-left: 5px;
+    padding: 20px;
+    margin-top: 30px;
+}
+/*****in die drei Länder habe 
+ich gleiche funktion gemacht.
+mit bilder noch datzu gemacht.
+(flagen)********/
+/***** Und die steht im erste spalte 
+mein 1 div name (container-1) im body ******/
+.tunesien{
+    width: 120px;
+    height: 90px;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-left: 40%;
+}
+
+.kuala{
+    width: 120px;
+    height: 90px;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-left: 40%;
+}
+.karibik{
+    width: 120px;
+    height: 90px;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-left: 40%;
+}
+/***ich will her meine paragraphs 
+ganze reihe für sich haben.deswegen
+ habe ich width 100% gemacht.*****/
+p{
+    width: 100%;
+}
+table{
+    width: 300px;
+}
+img{
+    width: 250px;
+}
+/**** Ich habe Imressum display Grid gegeben
+ um 2 spalten zu teilen.*****/
+main .impr{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 0px;
+    margin-top: 60%;
+}
+/****hier habe ich disklaimer gegeben und 
+padding top von 50px*****/
+.achtung{
+    padding-top: 50px;
+}
+/**für die disklaimer füge ich ein bild ein.**/
+.achtung img{
+    width: 50px;
+    border-radius: 10px;
+    
+}
+/**hier habe ich 5 fotos mit geleich groß eingepacket.
+und dann habe ich display flex benutzt.**/
+.img1{
+    width: 250px;
+    height: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+   
+}
+/****die gleich 5 fotos haben hier justify-content space-between.*******/
+.img1 img{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: black 5px 5px 5px ;
+    margin-left: 10px;
+    margin: 20px;
+}
